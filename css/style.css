@@ -1,0 +1,13 @@
+#hero {
+  background-image: url(../assets/Patern\ mobile.png);
+}
+
+@media (min-width: 1024px) {
+  #hero {
+    background: none;
+  }
+}
+
+/* #card-bg {
+  filter: blur(30px);
+} */
