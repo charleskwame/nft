@@ -105,3 +105,58 @@
     filter: blur(450px);
   }
 }
+
+#companies-section {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+/* #item {
+  grid-column: auto;
+} */
+
+@media (min-width: 1024px) {
+  #companies-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
+
+@media (min-width: 1024px) {
+  #auction::before {
+    content: "";
+    display: block;
+    width: 228px;
+    height: 167px;
+    background: #e7b226;
+    opacity: 70%;
+    z-index: -10;
+    filter: blur(450px);
+    position: absolute;
+    left: 209px;
+    top: 1445px;
+  }
+}
+
+#live-auction-decoration::before {
+  content: "";
+  display: block;
+  width: 84px;
+  height: 84px;
+  background: #8613a5;
+  border: #8613a5 solid 1px;
+  border-radius: 100%;
+  position: absolute;
+  z-index: 0;
+}
+
+@media (min-width: 1024px) {
+  #live-auction-decoration::before {
+    width: 110px;
+    height: 110px;
+  }
+}
