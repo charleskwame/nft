@@ -160,3 +160,91 @@
     height: 110px;
   }
 }
+
+#time-card::before {
+  content: "03:18:24";
+  text-align: center;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 500;
+  padding: 11px 36px 11px 36px;
+  position: absolute;
+  bottom: 0%;
+  width: px;
+  height: px;
+  background: linear-gradient(to bottom right, #8613a5, #fafafaaf);
+  z-index: 20;
+}
+
+#time-card-2::before {
+  content: "03:18:24";
+  text-align: center;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 500;
+  padding: 11px 36px 11px 36px;
+  position: absolute;
+  bottom: 0%;
+  width: px;
+  height: px;
+  background: linear-gradient(to bottom right, #8613a5, #fafafaaf);
+  z-index: 20;
+}
+
+#time-card-3::before {
+  content: "03:18:24";
+  text-align: center;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 500;
+  padding: 11px 36px 11px 36px;
+  position: absolute;
+  bottom: 0%;
+  width: px;
+  height: px;
+  background: linear-gradient(to bottom right, #8613a5, #fafafaaf);
+  z-index: 20;
+}
+
+@media (min-width: 1024px) {
+  #how-it-works::before {
+    content: "";
+    width: 100px;
+    height: 100px;
+    margin-left: 50%;
+    margin-right: 50%;
+    background-color: #d53d5c;
+    opacity: 80%;
+    filter: blur(450px);
+    position: absolute;
+    z-index: -20;
+  }
+}
+
+@media (min-width: 1024px) {
+  #how-it-works::after {
+    display: none;
+  }
+}
+
+#how-it-works::after {
+  content: "";
+  width: 100px;
+  height: 430px;
+  background-color: #d53d5c;
+  opacity: 80%;
+  filter: blur(450px);
+  position: absolute;
+  left: 234px;
+  top: 3787px;
+  z-index: -20;
+}
+
+#popular-collection-decoration::before {
+  content: "";
+  display: block;
+  width: 84px;
+  height: 84px;
+  background: #e03054;
+  border: #e03054 solid 1px;
+  border-radius: 100%;
+  position: absolute;
+  z-index: 0;
+}

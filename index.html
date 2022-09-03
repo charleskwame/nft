@@ -213,7 +213,7 @@
       <!-- live auction section -->
       <section
         id="auction"
-        class="bg-[#251928] mt-10 lg:mt-[104px] bg-opacity-30"
+        class="bg-[#251928] mt-10 lg:mt-[104px] bg-opacity-30 pb-[80px]"
       >
         <div class="w-3/4 mx-auto lg:w-fit">
           <div
@@ -234,7 +234,7 @@
             class="bg-[#3D2942] w-[320px] mx-auto py-[24px] px-[24px] mt-[80px] mb-[48px]"
           >
             <!-- first card -->
-            <div class="w-[270px] h-fit mx-auto">
+            <div id="time-card" class="w-[270px] h-fit mx-auto relative z-10">
               <!-- card image -->
               <img src="./assets/live auction image 1.png" alt="" />
             </div>
@@ -286,7 +286,7 @@
             class="bg-[#3D2942] w-[320px] mx-auto py-[24px] px-[24px] mb-[48px] lg:mt-[80px] mt-[48px]"
           >
             <!-- second card -->
-            <div class="w-[270px] h-fit mx-auto">
+            <div id="time-card-2" class="w-[270px] h-fit mx-auto relative z-10">
               <!-- card image -->
               <img src="./assets/live auction image 2.png" alt="" />
             </div>
@@ -338,7 +338,7 @@
             class="bg-[#3D2942] w-[320px] mx-auto py-[24px] px-[24px] lg:mt-[80px] mt-[48px] mb-[48px]"
           >
             <!-- third card -->
-            <div class="w-[270px] h-fit mx-auto">
+            <div id="time-card-3" class="w-[270px] h-fit mx-auto relative z-10">
               <!-- card image -->
               <img src="./assets/categories image 2.png" alt="" />
             </div>
@@ -385,6 +385,203 @@
               >
             </button>
           </div>
+        </div>
+
+        <div class="my-[48px] w-fit h-[54px] mx-auto">
+          <button class="border-2 border-[#FFCE4E] py-[13px] px-[58px]">
+            <a href="#" class="font-Worksans font-medium">View All</a>
+          </button>
+        </div>
+      </section>
+
+      <!-- how it works -->
+      <section id="how-it-works" class="pt-[79px] lg:pt-[185px]">
+        <h1
+          class="font-bold font-Oxanium text-[36px] text-center lg:text-[64px]"
+        >
+          How it works
+        </h1>
+
+        <div
+          class="lg:flex lg:items-center lg:justify-between lg:mt-[52px] mt-[70px] lg:mx-[50px]"
+        >
+          <div class="grid items-center justify-center gap-[20px] lg:gap-0">
+            <div class="w-[72px] h-[72px] lg:w-[106px} lg:h-[106px] mx-auto">
+              <img src="./assets/Wallet.svg" alt="" />
+            </div>
+
+            <p
+              class="font-Worksans font-semibold text-[24px] text-[#FFCE4E] lg:text-[20px]"
+            >
+              Set up your wallet
+            </p>
+          </div>
+
+          <div
+            class="rotate-90 lg:rotate-0 lg:mb-[70px] mt-[60px] mb-[60px] lg:mt-0 w-[76px] lg:w-fit mx-auto"
+          >
+            <img src="./assets/how it works arrow.svg" alt="" />
+          </div>
+
+          <div class="grid items-center justify-center gap-[20px] lg:gap-0">
+            <div class="w-[72px] h-[72px] lg:w-[106px} lg:h-[106px] mx-auto">
+              <img src="./assets/collection.svg" alt="" />
+            </div>
+
+            <p
+              class="font-Worksans font-semibold text-[24px] text-[#FFCE4E] lg:text-[20px]"
+            >
+              Create your collection
+            </p>
+          </div>
+
+          <div
+            class="rotate-90 lg:rotate-0 lg:mb-[70px] lg:mb-[70px] mt-[60px] mb-[60px] lg:mt-0 w-[76px] lg:w-fit mx-auto"
+          >
+            <img src="./assets/how it works arrow.svg" alt="" />
+          </div>
+
+          <div class="grid items-center justify-center gap-[20px] lg:gap-0">
+            <div class="w-[72px] h-[72px] lg:w-[106px} lg:h-[106px] mx-auto">
+              <img src="./assets/add nft.svg" alt="" />
+            </div>
+
+            <p
+              class="font-Worksans font-semibold text-[24px] text-[#FFCE4E] lg:text-[20px]"
+            >
+              Add your NFTs
+            </p>
+          </div>
+
+          <div
+            class="rotate-90 lg:rotate-0 lg:mb-[70px] lg:mb-[70px] mt-[60px] mb-[60px] lg:mt-0 w-[76px] lg:w-fit mx-auto"
+          >
+            <img src="./assets/how it works arrow.svg" alt="" />
+          </div>
+
+          <div class="grid items-center justify-center gap-[20px] lg:gap-0">
+            <div class="w-[72px] h-[72px] lg:w-[106px} lg:h-[106px] mx-auto">
+              <img src="./assets/sale.svg" alt="" />
+            </div>
+
+            <p
+              class="font-Worksans font-semibold text-[24px] text-[#FFCE4E] lg:text-[20px]"
+            >
+              List them for sale
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- popular collections -->
+      <section
+        id="popular-collections"
+        class="bg-[#251928] mt-10 lg:mt-[104px] bg-opacity-30 pb-[80px]"
+      >
+        <div class="w-fit mx-auto lg:w-fit">
+          <div
+            id="popular-collection-decoration"
+            class="w-fit pt-[54px] lg:pt-[80px]"
+          >
+            <h1
+              class="font-bold font-Oxanium text-[33px] relative z-10 left-5 lg:left-8 top-4 lg:top-0 lg:text-[64px]"
+            >
+              Popular Collections
+            </h1>
+          </div>
+        </div>
+
+        <div class="lg:flex items-center justify-around">
+          <!-- cards -->
+          <div
+            class="bg-[#3D2942] w-[320px] mx-auto py-[24px] px-[24px] mt-[80px] mb-[48px]"
+          >
+            <!-- first card -->
+            <div class="w-[270px] h-fit mx-auto relative z-10">
+              <!-- card image -->
+              <img src="./assets/popular collection image 1.png" alt="" />
+            </div>
+
+            <div class="flex items-center mt-[16px] justify-between">
+              <div class="flex items-center gap-[10px]">
+                <div class="w-[42px] h-[42px] lg:w-[50px] lg:h-[50px]">
+                  <img src="./assets/creator profile image 3.png" alt="" />
+                </div>
+
+                <p
+                  class="font-Worksans text-[20px] font-semibold text-[#F5FBF2]"
+                >
+                  @nm-7645
+                </p>
+              </div>
+
+              <p class="font-semibold font-Worksans text-[16px] text-[#C2B5C6]">
+                ERC-721
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="bg-[#3D2942] w-[320px] mx-auto py-[24px] px-[24px] mb-[48px] lg:mt-[80px] mt-[48px]"
+          >
+            <!-- second card -->
+            <div class="w-[270px] h-fit mx-auto relative z-10">
+              <!-- card image -->
+              <img src="./assets/popular collection image 2.png" alt="" />
+            </div>
+
+            <div class="flex items-center mt-[16px] justify-between">
+              <div class="flex items-center gap-[10px]">
+                <div class="w-[42px] h-[42px] lg:w-[50px] lg:h-[50px]">
+                  <img src="./assets/creator profile image 3.png" alt="" />
+                </div>
+
+                <p
+                  class="font-Worksans text-[20px] font-semibold text-[#F5FBF2]"
+                >
+                  @nm-7645
+                </p>
+              </div>
+
+              <p class="font-semibold font-Worksans text-[16px] text-[#C2B5C6]">
+                ERC-721
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="bg-[#3D2942] w-[320px] mx-auto py-[24px] px-[24px] lg:mt-[80px] mt-[48px] mb-[48px]"
+          >
+            <!-- third card -->
+            <div class="w-[270px] h-fit mx-auto relative z-10">
+              <!-- card image -->
+              <img src="./assets/popular collection image 1.png" alt="" />
+            </div>
+
+            <div class="flex items-center mt-[16px] justify-between">
+              <div class="flex items-center gap-[10px]">
+                <div class="w-[42px] h-[42px] lg:w-[50px] lg:h-[50px]">
+                  <img src="./assets/creator profile image 3.png" alt="" />
+                </div>
+
+                <p
+                  class="font-Worksans text-[20px] font-semibold text-[#F5FBF2]"
+                >
+                  @nm-7645
+                </p>
+              </div>
+
+              <p class="font-semibold font-Worksans text-[16px] text-[#C2B5C6]">
+                ERC-721
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="my-[48px] w-fit h-[54px] mx-auto">
+          <button class="border-2 border-[#FFCE4E] py-[13px] px-[58px]">
+            <a href="#" class="font-Worksans font-medium">View All</a>
+          </button>
         </div>
       </section>
     </main>
