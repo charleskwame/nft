@@ -11,3 +11,97 @@
 /* #card-bg {
   filter: blur(30px);
 } */
+
+#card-bg::before {
+  display: block;
+  content: "";
+  background-color: #e7b226;
+  width: 111px;
+  height: 55px;
+  position: absolute;
+  right: 0%;
+  bottom: 10%;
+  z-index: -10;
+  filter: blur(150px);
+}
+
+#hero-text::before {
+  display: block;
+  content: "";
+  background-color: #e7b226;
+  width: 111px;
+  height: 55px;
+  position: absolute;
+  right: 0%;
+  bottom: 3%;
+  z-index: -10;
+  filter: blur(150px);
+}
+
+@media (min-width: 1024px) {
+  #card-bg::before {
+    width: 445px;
+    height: 227px;
+    filter: blur(450px);
+  }
+}
+
+@media (min-width: 1024px) {
+  #hero-text::before {
+    display: block;
+    content: "";
+    background-color: #e7b226;
+    width: 400px;
+    height: 180px;
+    filter: blur(450px);
+    right: 100%;
+    bottom: 3%;
+  }
+}
+
+/* @media (min-width: 1024px) {
+  #hero-text::after {
+    display: inline-block;
+    content: "";
+    background-color: #bb00ab;
+    width: 200px;
+    height: 200px;
+    border: solid 1px #bb00ab;
+    border-radius: 100%;
+    position: relative;
+    bottom: 80%;
+    left: 95%;
+    z-index: -10;
+    filter: blur(450px);
+  }
+} */
+
+#hero::before {
+  display: block;
+  content: "";
+  background-color: #e7b226;
+  width: 111px;
+  height: 55px;
+  position: absolute;
+  right: 0%;
+  bottom: 3%;
+  z-index: -10;
+  filter: blur(150px);
+}
+
+@media (min-width: 1024px) {
+  #hero::after {
+    display: inline-block;
+    content: "";
+    background-color: #bb00ab;
+    width: 200px;
+    height: 200px;
+    border: solid 1px #bb00ab;
+    border-radius: 100%;
+    position: relative;
+    bottom: 80%;
+    left: 95%;
+    z-index: -10;
+    filter: blur(450px);
+  }
+}
