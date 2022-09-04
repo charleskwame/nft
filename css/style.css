@@ -8,10 +8,6 @@
   }
 }
 
-/* #card-bg {
-  filter: blur(30px);
-} */
-
 #card-bg::before {
   display: block;
   content: "";
@@ -59,23 +55,6 @@
   }
 }
 
-/* @media (min-width: 1024px) {
-  #hero-text::after {
-    display: inline-block;
-    content: "";
-    background-color: #bb00ab;
-    width: 200px;
-    height: 200px;
-    border: solid 1px #bb00ab;
-    border-radius: 100%;
-    position: relative;
-    bottom: 80%;
-    left: 95%;
-    z-index: -10;
-    filter: blur(450px);
-  }
-} */
-
 #hero::before {
   display: block;
   content: "";
@@ -113,10 +92,6 @@
   justify-content: center;
   align-items: center;
 }
-
-/* #item {
-  grid-column: auto;
-} */
 
 @media (min-width: 1024px) {
   #companies-section {
@@ -247,4 +222,63 @@
   border-radius: 100%;
   position: absolute;
   z-index: 0;
+}
+
+#creators::before {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 100px;
+  background-color: #b1d26f;
+  filter: blur(450px);
+  position: absolute;
+  z-index: -10;
+  left: 260px;
+  bottom: 200px;
+}
+
+@media (min-width: 1024px) {
+  #creators::before {
+    display: none;
+  }
+}
+
+#creators-decoration::before {
+  content: "";
+  display: block;
+  width: 84px;
+  height: 84px;
+  background: #8613a5;
+  border: #8613a5 solid 1px;
+  border-radius: 100%;
+  position: absolute;
+  z-index: 0;
+}
+
+@media (min-width: 1024px) {
+  #creators-decoration::before {
+    width: 110px;
+    height: 110px;
+  }
+}
+
+#creator-card::before {
+  content: "";
+  display: block;
+  width: 3px;
+  height: 100%;
+  background-color: #e03054;
+  position: absolute;
+  left: 0%;
+  z-index: 10;
+}
+
+@media (min-width: 1024px) {
+  #creator-card-container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+  }
 }
